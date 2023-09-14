@@ -1,0 +1,29 @@
+cc: Current Customer
+ci: Current Invoice
+oi: Other Invoice
+ca: Current Article (part of ci)
+ra: Recommended Article (part of oi)
+oc: Other customer
+
+
+MATCH
+(cc :Customer) -[:HAS_INVOICE]->
+(ci :Invoice {invoiceId: 1}) 
+  -[:CONTAINS]-> (ca)
+  <-[:CONTAINS]- (oi)
+  -[:CONTAINS]-> (ra),
+
+(oi) <-[:HAS_INVOICE]- (oc)
+
+WHERE
+  cc <> oc
+  AND ra <> ca
+  AND NOT (ra) <-[:CONTAINS]- (ci)
+  AND oi.date + duration("P3M") >= date()
+
+RETURN
+  ra
+
+Meaningful alternatives to 100% correct cypher syntax are accepted as well, e.g.
+ 
+  oi.date >= current date - 3 month

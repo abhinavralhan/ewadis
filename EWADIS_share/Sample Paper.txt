@@ -1,0 +1,92 @@
+[2:16 PM, 8/3/2022] Priya Yadav: There were 5 questions 
+10 marks 4 true and false with reasons
+1. Web services
+2. 2. Cookies
+3. 3. Restful API
+4. 4. SOAP
+25 marks draw class diagram and extend the navigational model
+
+15 marks 3D diagram of dimensions of web modeling. And to explain the diagram and give its real-life example.
+
+15 marks MVC explain with diagram and real-life example.
+
+25 marks conversion to graph schema model, make graph example from that model, cipher query..
+
+********************************************
+
+1) True or false and explain why - 10 marks 
+4 questions
+server side session map 
+soap 
+restful 
+decomposition/locality/separation of concerns
+
+2a navigational model - 15 marks 
+2b domain model - 10 marks 
+
+Navigation and domain - shopping cart, products, users, order, shopping items, booking, order history, registered user/guest user
+
+3a Explain web modelling processes with respect to the diagram given with real world application examples - 15 marks
+
+3b mvc diagram and explain with real example - 15 marks 
+
+4a graph mapping - 10 marks 
+4b graph schema - 5 marks 
+Graph schema - 
+City, persons, pointOfIntererest (deutsche ecke, ehreibreinstein), visits, abstract class location
+
+4c cypher queries - 10 marks
+Cypher queries 3 :
+
+Alice wants to visit a place that is visited by either her friend or a friend of friend and should not be any of the places she already visited  
+
+Alice wants to visit a place that was visited by a friend and Alice didn't visit it in the last 1 year 
+
+Alice wants to visit a place that's not her own home town
+
+**********************************************************
+
+
+Qualities of layered architecture 
+Explain DAO
+Explain scalability 
+Explain vertical and horizontal scalability
+
+**********************************************************
+
+Olat system's graph query and cypher query and hospital management class+ navigation model
+
+************************************************************
+
+ total four questions
+1) a)two quality measures
+B) DAO
+2) navigation and domain model
+3) a)scalability
+B) horizontal and vertical scalability
+4)  a) Draw Graph schema
+B) cypher queries
+
+***********************************************************
+
+Theory questions 
+-Two software quality measures contrivuted by the layered architecture (8)
+-DAO (7)
+-Scalability (5)
+-Horizontal and vertical scaling (10)
+
+************************************************************
+
+Cypher query: 
+Should take inout studnef and course Id, and return m students as group membbers for tutorial with following conditions:
+-lecture l must have a tutorial 
+-student s should be in that lecture 
+- m students should not already be enrolled in that tutorial 
+- m should be taking the same course as student s 
+- student m and s shud have been group members in anouther tutorial and shud have had grade equal to or better than 2.5
+
+***********************************************************
+
+The domain model was a patient management system 
+And the graph schema was for a course management system 
+And teh cypher query was for reccomending group mates for tutorials for a student

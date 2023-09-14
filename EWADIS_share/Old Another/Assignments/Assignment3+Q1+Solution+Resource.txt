@@ -1,0 +1,3 @@
+Reference to Q1 In Assignment 3
+
+https://www.ibm.com/developerworks/library/ws-mapping-to-rdb/

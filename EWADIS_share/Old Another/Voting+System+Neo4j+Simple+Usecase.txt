@@ -1,0 +1,56 @@
+CREATE (Volker:User {email:'volker@uni-koblez.de'})
+CREATE (folder1:Folder {name:'Assignment'})
+CREATE (entry1:Entry {})
+CREATE (voting1:Voting{})
+CREATE (exe1:Execution{})
+CREATE (Ans1:Answer{})
+
+CREATE (Volker) -[:CREATES_A] -> (folder1)
+CREATE (folder1) -[:has] -> (entry1)
+
+WITH Volker as a
+MATCH (a)-[:CREATES_A]->(m) RETURN a,m LIMIT 10;
+
+
+
+
+
+
+
+-----------------------------------------------------------------------
+
+CREATE (Volker:User {email:'volker@uni-koblez.de'})
+CREATE (folder1:Folder {name:'Assignment1'})
+CREATE (folder2:Folder {name:'Assignment2'})
+CREATE (folder3:Folder {name:'Assignment3'})
+CREATE (folder4:Folder {name:'Assignment4'})
+CREATE (folder5:Folder {name:'Assignment5'})
+CREATE (folder6:Folder {name:'Assignment6'})
+CREATE (folder7:Folder {name:'Assignment7'})
+CREATE (folder8:Folder {name:'Assignment8'})
+CREATE (folder9:Folder {name:'Assignment9'})
+CREATE (folder10:Folder {name:'Assignment10'})
+CREATE (folder11:Folder {name:'Assignment11'})
+CREATE (folder12:Folder {name:'Assignment12'})
+
+CREATE (entry1:Entry {name:"Assi1"})
+CREATE (voting1:Voting{})
+CREATE (exe1:Execution{})
+CREATE (Ans1:Answer{})
+
+CREATE (Volker) -[:CREATES_A] -> (folder1)
+CREATE (Volker) -[:CREATES_A] -> (folder2)
+CREATE (Volker) -[:CREATES_A] -> (folder3)
+CREATE (Volker) -[:CREATES_A] -> (folder4)
+CREATE (Volker) -[:CREATES_A] -> (folder5)
+CREATE (Volker) -[:CREATES_A] -> (folder6)
+CREATE (Volker) -[:CREATES_A] -> (folder7)
+CREATE (Volker) -[:CREATES_A] -> (folder8)
+CREATE (Volker) -[:CREATES_A] -> (folder9)
+CREATE (Volker) -[:CREATES_A] -> (folder10)
+CREATE (Volker) -[:CREATES_A] -> (folder11)
+
+CREATE (folder1) -[:has] -> (entry1)
+
+WITH Volker as a
+MATCH (a)-[:CREATES_A]->(m) RETURN a,m LIMIT 10;
